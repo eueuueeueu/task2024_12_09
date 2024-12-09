@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .pf {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 34px;
+      height: 34px;
+      position: relative;
+      margin: 0 5px;
+    }
+
+    .box div {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 100%;
+    }
+
+    .red div {
+      background-color: red;
+    }
+
+    .box div:first-child {
+      left: 14px;
+    }
+
+    .box div:last-child {
+      left: 7px;
+      top: 7px;
+      border-radius: 0;
+      transform: rotate(45deg);
+    }
+
+    p {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pf">
+    <!-- <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> -->
+  </div>
+  <p></p>
+</body>
+<script src="../js/02.js"></script>
+
+</html>
