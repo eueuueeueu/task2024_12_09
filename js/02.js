@@ -17,30 +17,31 @@ window.addEventListener('click', function (e) {
         box[j].classList.remove('red')
       }
     }
-  }
-  let str = parseInt(e.target.parentNode.className.slice(-1,))
-  for (let i = 0; i <= str; i++) {
-    let red = this.document.querySelector(`.id-${i}`)
-    red.classList.add('red')
-  }
-  let p = this.document.querySelector('p')
-  switch (str) {
-    case 0:
-      p.innerHTML = '差劲'
-      break;
-    case 1:
-      p.innerHTML = '不合格'
-      break;
-    case 2:
-      p.innerHTML = '合格'
-      break;
-    case 3:
-      p.innerHTML = '良好'
-      break;
-    case 4:
-      p.innerHTML = '优秀'
-      break;
-    default:
-      break;
+
+    let str = parseInt(e.target.parentNode.className.slice(-1,))
+    for (let i = 0; i <= str; i++) {
+      let red = this.document.querySelector(`.id-${i}`)
+      red.classList.add('red')
+    }
+    let p = this.document.querySelector('p')
+    switch (str) {
+      case 0:
+        p.innerHTML = '差劲'
+        break;
+      case 1:
+        p.innerHTML = '不合格'
+        break;
+      case 2:
+        p.innerHTML = '合格'
+        break;
+      case 3:
+        p.innerHTML = '良好'
+        break;
+      case 4:
+        p.innerHTML = '优秀'
+        break;
+      default:
+        break;
+    }
   }
 })
